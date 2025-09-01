@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./ip-address-tracker-screenshot.png)
+![](./public/ip-address-tracker-screenshot.png)
 
 ### Links
 

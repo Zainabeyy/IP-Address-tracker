@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-Gray-950: hsl(0, 0%, 17%);
+  --color-Gray-400: hsl(0, 0%, 58%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  @apply min-w-[100vw] max-h-screen overflow-hidden text-lg;
+}
+
+dt{
+  @apply uppercase text-Gray-400 text-[0.675rem] md:text-xs font-medium tracking-[0.15em];
+}
+
+dl > div{
+  @apply flex flex-col items-center my-2.5 gap-0.5 md:gap-3 md:items-start flex-1;
+}
+
+dd{
+  @apply text-Gray-950 text-xl md:text-2xl font-medium;
+}
+
+.backgroundImg {
+  @apply bg-[url('/pattern-bg-mobile.png')] sm:bg-[url('/pattern-bg-desktop.png')] bg-no-repeat bg-cover max-w-full min-h-[35vh] ;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
+
+.line{
+  @apply max-w-[1px] bg-Gray-400 min-h-full self-stretch md:block hidden;
+}
+
